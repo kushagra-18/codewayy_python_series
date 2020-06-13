@@ -1,4 +1,4 @@
-#Tuple
+#Tuple declaration
 pan_tup = ("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS")
 print(pan_tup)
 
@@ -20,10 +20,10 @@ for x in pan_tup:
 print(len(pan_tup))
 
 #Adding two tuples
-pan_count_tup=(1,2,3,4,5,6)
-tot_tup=pan_count_tup+pan_tup
+pan_count_tup = (1,2,3,4,5,6)
+tot_tup = pan_count_tup+pan_tup
 print(tot_tup)
 
 #Using the tuple() method to make a tuple
-new_tup=tuple(("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS"))
+new_tup = tuple(("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS"))
 print(new_tup)
