@@ -1,6 +1,6 @@
 #Sets
 #intialising sets
-pan_set={"COVID-19", "Spanish FLu", "Ebola"}
+pan_set = {"COVID-19", "Spanish FLu", "Ebola"}
 print(pan_set)
 
 #Accesing sets through loops
@@ -28,6 +28,6 @@ print(x)
 print(pan_set)
 
 #Using the union function to return the union of two sets
-pan_set2={"COVID-19", "Spanish FLu", "Ebola"}
-main_set=union(pan_set2)
+pan_set2 = {"COVID-19", "Spanish FLu", "Ebola"}
+main_set = union(pan_set2)
 print(main_set)
