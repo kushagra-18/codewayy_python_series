@@ -30,7 +30,7 @@ pan_list.pop()
 print(pan_list)
 
 #joing two lists
-count_list=[1,2,3,4,5,6]
+count_list = [1,2,3,4,5,6]
 print(count_list+pan_list)
 
 #use extend() method to add list2 at the end of list1:
