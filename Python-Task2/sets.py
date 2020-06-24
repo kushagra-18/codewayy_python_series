@@ -1,33 +1,33 @@
-#Sets
+s#Sets
 #intialising sets
-pan_set = {"COVID-19", "Spanish FLu", "Ebola"}
-print(pan_set)
+panSet = {"COVID-19", "Spanish FLu", "Ebola"}
+print(panSet)
 
 #Accesing sets through loops
-for x in pan_set:
+for x in panSet:
     print(x)
     
 #Adding item using add fucntion
-pan_set.add("Polio")
-print(pan_set)
+panSet.add("Polio")
+print(panSet)
 
 #Adding multiple items using update fucntion
-pan_set.update(["Polio","AIDS"])
-print(pan_set)
+panSet.update(["Polio","AIDS"])
+print(panSet)
 
 #getting the length
-print(len(pan_set))
+print(len(panSet))
 
 #Removing items using discard fucntion
-pan_set.discard("AIDS")
-print(pan_set)
+panSet.discard("AIDS")
+print(panSet)
 
 #deleting using pop
-x=pan_set.pop()
+x=panSet.pop()
 print(x)
-print(pan_set)
+print(panSet)
 
 #Using the union function to return the union of two sets
-pan_set2 = {"COVID-19", "Spanish FLu", "Ebola"}
-main_set = union(pan_set2)
+panSet2 = {"COVID-19", "Spanish FLu", "Ebola"}
+main_set = union(panSet2)
 print(main_set)

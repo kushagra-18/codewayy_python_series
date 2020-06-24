@@ -1,29 +1,29 @@
-#Tuple declaration
-pan_tup = ("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS")
-print(pan_tup)
+#Tuple
+panTup = ("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS")
+print(panTup)
 
 #accesing tuple items
-print(pan_tup[2])
+print(panTup[2])
 
 #Negative Indexing
 #Negative indexing means beginning from the end, -1 refers to the last item,
-print(pan_tup[-1])
+print(panTup[-1])
 
 #Range of Indexes
-print(pan_tup[2:4])
+print(panTup[2:4])
 
 #Looping through a tuple
-for x in pan_tup:
+for x in panTup:
     print(x)
     
 #Tuple Length, To determine how many items a tuple has
-print(len(pan_tup))
+print(len(panTup))
 
 #Adding two tuples
-pan_count_tup = (1,2,3,4,5,6)
-tot_tup = pan_count_tup+pan_tup
-print(tot_tup)
+pan_count_tup=(1,2,3,4,5,6)
+totTup = pan_Count_tup+panTup
+print(totTup)
 
 #Using the tuple() method to make a tuple
-new_tup = tuple(("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS"))
-print(new_tup)
+newTup = tuple(("COVID-19", "Spanish FLu", "Ebola", "H1N1","SARS","MERS"))
+print(newTup)
