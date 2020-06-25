@@ -4,3 +4,5 @@ All the work from Python series by Codewayy will be uploaded here
 ### Integers,float exercise and marks of students programs
 ## Task 2
 ### Python data structures
+## Task 3
+### Students details function, loops and string length
