@@ -1,33 +1,24 @@
 #Function are defined here
+
 #Name function
-def funcName():
-    firstName = input("Please Enter your first name:")
-    lastName = input("Please Enter your last name:")
-    fName = firstName +" "+ lastName)
+def funcName(firstName,lastName):
+    fName = (firstName +" "+ lastName)
     return (fName)
+
 #Marks Fucntion
 
-def funcMarks(noSubj):
-    #Declaring an empty list for marks
-    listMarks = []
-    for i in range (0,noSubj):
-            markSubj = float(input("Enter the marks of subject"))
-            listMarks.append(markSubj)
-    tot=sum(listMarks)
-    return tot
-    
-noSubj = int(input("Enter the number of subjects:"))
+def totMarks(listMark):
+    totMark=sum(listMarks)
+    return totMark
+#Percent function
 
-#Function for grades
+def perMarks(listMark,noSubj):
+    totMark=sum(listMarks)
+    marksPer = totMark/noSubj
+    return marksPer
+# Grading Function
 
-def funcGrade(noSubj,tot):
-    marksPer = tot/noSubj
-    print("Your Percentage is:",marksPer)
-    return (marksPer)
-Percenatge = funcGrade(noSubj,funcMarks(noSubj))   
-
-#Function for grades
-def funcGrade(markPer):
+def funcGrade(marksPer):
      if(int(markPer) >= 95):
         return('A')
      elif(int(markPer) >= 85 and int(markPer) <= 95):
@@ -38,13 +29,26 @@ def funcGrade(markPer):
         return('D')
      else:
         return("FAILED")
+#Master function
 
-# function to call all the functions
-def masterFunc(markPer,percentage):
-    print("The Grade of the student is",funcGrade(markPer))
-    print("The percentage of studrnt is",percentage )
-    print("The name of student is"Fname)
+def masterFunc(firstName,lastName,listMarks,noSubj,marksPer):
+    print(funcName(firstName,lastName))
+    print("Your Percentage:", perMarks(listMarks,noSubj))
+    print("Your Grade:", funcGrade(marksPer))
 
-    # Calling the function
-masterFunc(markPer,percentage,Name)
+# Input
+
+firstName = input("Please Enter your first name:")
+lastName = input("Please Enter your last name:")
+noSubj = int(input("Please enter the number of subjects"))
+
+ #Declaring an empty list for marks
     
+listMarks = []
+for i in range (0,noSubj):
+        markSubj = float(input("Enter the marks of subject:"))
+        listMarks.append(markSubj)
+marksPer = perMarks(listMarks,noSubj)
+
+#Printing
+masterFunc(firstName,lastName,listMarks,noSubj,marksPer)
