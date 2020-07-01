@@ -3,8 +3,9 @@
 def cntWord(userWord):
     numWord = 0
     for i in userWord:
-        numWord = numWord + 1
-    print("number of words are:",numWord)
+        if(i == " "):
+            numWord = numWord + 1
+    print("number of words are:",numWord+1)
 
 #User input
 

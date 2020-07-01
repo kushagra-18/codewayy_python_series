@@ -1,21 +1,17 @@
 #Question 6
 #Function to check the number
-def findType(n):
-    i = 1
-    j = 1
+def findType(num):
     sum = 0
-    for i in range(n):
-        for j in range(n):
-            if (i * j == n):
-                sum = sum + i
-                sum = sum + j
-            if sum > n:
-                return -1
-            elif sum < n:
-                return 1
-            else:
-                break
-    return 0
+    for i in range(1,num):
+        if(num % i == 0):
+            sum = sum + i
+    if(num < sum):
+        return -1
+        
+    elif(num == sum):
+        return 0
+    else:
+        return 1
 
 
 
