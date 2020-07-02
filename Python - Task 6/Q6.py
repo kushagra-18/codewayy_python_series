@@ -20,3 +20,14 @@ userNum = int(input("Enter Input:"))
 #Calling the function with number as perimeter
 findType(userNum)
 
+#Checking for numbers
+
+if(findType(userNum) == 0):
+    print("Perfect Number")
+
+elif((findType(userNum) == -1)):
+    print("Abdundnt Number")
+
+else:
+    print("Deficient Number")
+
